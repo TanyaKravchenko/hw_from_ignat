@@ -1,3 +1,40 @@
-.someClass {
+.AffairsHeader {
+    font-size: 30px;
+    color: orange;
+    text-decoration: underline;
+}
 
+.AffairsContainer {
+    width: 550px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.AffairsWrapper {
+    margin-bottom: 15px;
+}
+
+.mappedAffairs {
+    list-style-type: none;
+    color: wheat;
+    font-size: 18px;
+}
+
+.AffairWrapper {
+    padding: 10px;
+}
+
+.RemoveButton {
+    padding: 2px 10px;
+    background-color: wheat;
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.TaskButton button {
+    margin: 10px;
+    padding: 10px;
+    color: rgb(155, 107, 18);
+    background-color: wheat;
+    border-radius: 10px;
 }
