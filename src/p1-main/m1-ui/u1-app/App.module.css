@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.appWrapper {
+    background-image: url(../../../images/1533326959_low-poly-background-generator-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.error {
+    border: red 3px solid;
+}
+
+.error-message {
+    color: red;
+}
+
+.name-input {
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.name-button {
+    margin: 10px;
+    padding: 10px;
+    color: rgb(155, 107, 18);
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.count-name {
+    margin: 15px;
+    font-size: 18px;
+    color: wheat;
+}

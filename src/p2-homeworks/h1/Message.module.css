@@ -1,0 +1,56 @@
+.itemPost {
+    display: flex;
+    padding: 30px;
+}
+
+.itemAvatar img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.itemName {
+    padding-bottom: 25px;
+    color: royalblue;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.itemMessenger {
+    padding-bottom: 20px;
+}
+
+.itemTime {
+    text-align: end;
+    color: lightgray;
+}
+
+.itemText {
+    width: 300px;
+    padding: 15px 10px;
+    position: relative;
+    background-color: honeydew;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+.itemText:after,
+.itemText:before {
+    content: "";
+    border: solid transparent;
+    position: absolute;
+    right: 100%;
+    top: 8px;
+}
+
+.itemText:after {
+    border-right-color: honeydew;
+    border-width: 8px;
+    margin-top: 0;
+}
+
+.itemText:before {
+    border-right-color: orange;
+    border-width: 9px;
+    margin-top: -1px;
+}
