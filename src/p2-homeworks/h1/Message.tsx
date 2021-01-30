@@ -6,7 +6,6 @@ type PropsType = {
     name: string
     message: string
     timeMessage: string
-
 }
 
 const Message: React.FC<PropsType> = (props) => {
@@ -20,7 +19,6 @@ const Message: React.FC<PropsType> = (props) => {
                 <div className={s.itemMessenger}>{props.message}</div>
                 <div className={s.itemTime}>{props.timeMessage}</div>
             </div>
-
         </div>
     );
 }

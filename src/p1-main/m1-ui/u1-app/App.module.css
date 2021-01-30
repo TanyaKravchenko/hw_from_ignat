@@ -19,17 +19,17 @@
     border: red 3px solid;
 }
 
-.error-message {
+.errorMessage {
     color: red;
 }
 
-.name-input {
+.nameInput {
     font-size: 18px;
     padding: 15px;
     margin: 15px;
 }
 
-.name-button {
+.nameButton {
     margin: 10px;
     padding: 10px;
     color: rgb(155, 107, 18);
@@ -37,7 +37,7 @@
     border-radius: 10px;
 }
 
-.count-name {
+.countName {
     margin: 15px;
     font-size: 18px;
     color: wheat;

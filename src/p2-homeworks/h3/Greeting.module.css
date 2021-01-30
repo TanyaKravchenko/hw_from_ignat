@@ -1,7 +1,27 @@
-.someClass {
-
+.error {
+    border: red 3px solid;
 }
 
-.error {
-    border: 1px solid red;
+.errorMessage {
+    color: red;
+}
+
+.nameInput {
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.nameButton {
+    margin: 10px;
+    padding: 10px;
+    color: rgb(155, 107, 18);
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.countName {
+    margin: 15px;
+    font-size: 18px;
+    color: wheat;
 }

@@ -1,9 +1,10 @@
-import React, {useState} from "react";
-import Greeting from "./Greeting";
+import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
+import Greeting from './Greeting';
+import {UserType} from './HW3';
 
 type GreetingContainerPropsType = {
-    users: any // need to fix any
-    addUserCallback: any // need to fix any
+    users: Array<UserType>
+    addUserCallback: (name: string) => void
 }
 
 // более простой и понятный для новичков
@@ -12,25 +13,44 @@ type GreetingContainerPropsType = {
 // более современный и удобный для про :)
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>(""); // need to fix any
-    const [error, setError] = useState<any>(""); // need to fix any
+    let [name, setName] = useState<string>('');
+    let [error, setError] = useState<string | null>(null);
 
-    const setNameCallback = (e: any) => { // need to fix any
-        setName(""); // need to fix
-    };
-    const addUser = () => {
-        alert(`Hello  !`); // need to fix
-    };
+    function sayHallo(name: string) {
+        if (name) {
+            alert('Hi ' + name);
+            addUserCallback(name);
+        }
+        setName('');
+    }
 
-    const totalUsers = 0; // need to fix
+    const onAddItemClick = () => {
+        if (name.trim() !== '') {
+            sayHallo(name);
+        } else {
+            setError('Title is required')
+        }
+    }
+    const onTitleChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setError(null);
+        setName(e.currentTarget.value)
+    }
+    const onKeyPressAddItem = (e: KeyboardEvent<HTMLInputElement>) => {
+        setError(null);
+        if (e.charCode === 13) {
+            onAddItemClick()
+        }
+    }
 
     return (
         <Greeting
+            users={users}
             name={name}
-            setNameCallback={setNameCallback}
-            addUser={addUser}
+            onTitleChange={onTitleChange}
             error={error}
-            totalUsers={totalUsers}
+            onKeyPressAddItem={onKeyPressAddItem}
+            onAddItemClick={onAddItemClick}
+            setError={setError}
         />
     );
 }
