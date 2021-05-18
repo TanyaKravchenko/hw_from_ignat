@@ -5,5 +5,7 @@
 .column {
     display: flex;
     flex-direction: column;
+    width: 550px;
     align-items: center;
+    margin-bottom: 25px;
 }

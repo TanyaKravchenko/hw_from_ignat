@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from "react";
+import React, {useState} from "react";
 import SuperInputText from "./common/c1-SuperInputText/SuperInputText";
 import s from "./HW4.module.css";
 import SuperButton from "./common/c2-SuperButton/SuperButton";
@@ -16,11 +16,10 @@ function HW4() {
     }
 
     const [checked, setChecked] = useState<boolean>(false);
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
+    const testOnChange = () => {};
 
     return (
         <div>
-            <hr/>
             homeworks 4
 
             <div className={s.column}>
@@ -35,10 +34,10 @@ function HW4() {
 
                 {/*should work (должно работать)*/}
                 <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
+                    //red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    It'sMySuperButton {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
                 {/*should work (должно работать)*/}
@@ -52,13 +51,9 @@ function HW4() {
                 {/*// onChange тоже должен работать*/}
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
-
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperInputText/>*/}
             {/*<AlternativeSuperButton/>*/}
-            {/*<AlternativeSuperCheckbox/>*/}
-            <hr/>
         </div>
     );
 }

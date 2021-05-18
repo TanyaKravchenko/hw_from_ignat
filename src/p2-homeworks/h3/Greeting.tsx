@@ -16,7 +16,7 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {users,name, error, onTitleChange, onKeyPressAddItem, onAddItemClick, setError} // деструктуризация пропсов
 ) => {
-    const inputClass = error ? s.error : s.nameInput;
+    const inputClass = `${error ? s.error : s.nameInput} ${s.input}`;
 
     return (
         <div onBlur={() => setError(null)}>
@@ -29,7 +29,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             />
             <button className={s.nameButton} onClick={onAddItemClick}>name</button>
             {<div className={s.errorMessage}>{error}</div>}
-            <span className={s.countName}>countName:{users.length}</span>
+            <span className={s.countName}>countName: {users.length}</span>
         </div>
     );
 }

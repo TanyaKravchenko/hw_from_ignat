@@ -12,12 +12,19 @@ function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
         props.deleteAffairCallback(props.affair.id)
     };
+    const priorityClasses = classes.AffairItem + ' ' + classes[props.affair.priority]
 
     return (
         <div className={classes.AffairWrapper}>
-            <span>{props.affair.title} - </span>
-            <span>{props.affair.priority} - </span>
-            <button className={classes.RemoveButton} onClick={deleteCallback}>Remove</button>
+            <div className={classes.AffairItem}>{props.affair.title}</div>
+            <div className={priorityClasses}>{props.affair.priority}</div>
+            <div className={classes.AffairItem}>
+                <button
+                    className={classes.RemoveButton}
+                    onClick={deleteCallback}>
+                    Remove
+                </button>
+            </div>
         </div>
     );
 }

@@ -2,33 +2,44 @@
     font-size: 30px;
     color: orange;
     text-decoration: underline;
+    text-align: center;
 }
 
 .AffairsContainer {
+    display: flex;
+    flex-direction: column;
     width: 550px;
-    text-align: center;
     margin-bottom: 25px;
+    padding-left: 50px;
 }
 
 .AffairsWrapper {
-    margin-bottom: 15px;
 }
 
-.mappedAffairs {
-    list-style-type: none;
+.MappedAffairs {
     color: wheat;
     font-size: 18px;
+    text-align: center;
 }
 
 .AffairWrapper {
+    display: flex;
     padding: 10px;
 }
+
 
 .RemoveButton {
     padding: 2px 10px;
     background-color: wheat;
-    background-color: wheat;
     border-radius: 10px;
+}
+
+.RemoveButton:hover {
+    opacity: 0.5;
+}
+
+.TaskButton {
+    text-align: center;
 }
 
 .TaskButton button {
@@ -37,4 +48,19 @@
     color: rgb(155, 107, 18);
     background-color: wheat;
     border-radius: 10px;
+    text-align: center;
+}
+
+.TaskButton button:hover {
+    opacity: 0.5;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+.AffairItem {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100px;
 }

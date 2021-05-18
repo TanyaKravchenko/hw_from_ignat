@@ -18,6 +18,7 @@ function HW1() {
                 message={messageData.message}
                 timeMessage={messageData.time}
             />
+            <hr/>
         </div>
     );
 }

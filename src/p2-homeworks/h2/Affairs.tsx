@@ -8,6 +8,7 @@ type AffairsPropsType = {
     data: Array<AffairType>
     setFilter: (filter: FilterType) => void
     deleteAffairCallback: (id: string) => void
+    filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -19,25 +20,30 @@ function Affairs(props: AffairsPropsType) {
             deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
-    const onAllChangeFilter = () => props.setFilter('all')
+    const onAllChangeFilter = () => props.setFilter('All')
     const onHighChangeFilter = () => props.setFilter('High')
     const onMiddleChangeFilter = () => props.setFilter('Middle')
     const onLowChangeFilter = () => props.setFilter('Low')
+
+    const onAllFilter = props.filter === 'All' ? classes.active : ''
+    const onHighFilter = props.filter === 'High' ? classes.active : ''
+    const onMiddleFilter = props.filter === 'Middle' ? classes.active : ''
+    const onLowFilter = props.filter === 'Low' ? classes.active : ''
 
     return (
         <div>
             <div className={classes.AffairsContainer}>
                 <h3 className={classes.AffairsHeader}>{props.title}</h3>
                 <div className={classes.AffairsWrapper}>
-                    <ul className={classes.mappedAffairs}>
+                    <div className={classes.MappedAffairs}>
                         {mappedAffairs}
-                    </ul>
+                    </div>
                 </div>
                 <div className={classes.TaskButton}>
-                    <button onClick={onAllChangeFilter}>All</button>
-                    <button onClick={onHighChangeFilter}>High</button>
-                    <button onClick={onMiddleChangeFilter}>Middle</button>
-                    <button onClick={onLowChangeFilter}>Low</button>
+                    <button onClick={onAllChangeFilter} className={onAllFilter}>All</button>
+                    <button onClick={onHighChangeFilter} className={onHighFilter}>High</button>
+                    <button onClick={onMiddleChangeFilter} className={onMiddleFilter}>Middle</button>
+                    <button onClick={onLowChangeFilter} className={onLowFilter}>Low</button>
                 </div>
             </div>
         </div>
