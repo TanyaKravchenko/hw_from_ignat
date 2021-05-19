@@ -11,22 +11,25 @@
     width: 550px;
     margin-bottom: 25px;
     padding-left: 50px;
+    text-align: center;
 }
 
 .AffairsWrapper {
+    /*display: flex;*/
+    /*margin: auto;*/
 }
 
 .MappedAffairs {
     color: wheat;
     font-size: 18px;
-    text-align: center;
 }
 
 .AffairWrapper {
     display: flex;
+    flex-direction: row;
+    flex-grow: 3;
     padding: 10px;
 }
-
 
 .RemoveButton {
     padding: 2px 10px;
@@ -59,8 +62,8 @@
     opacity: 0.5;
 }
 
-.AffairItem {
+.AffairItem:not(:last-child) {
     display: flex;
     flex-direction: row;
-    flex-basis: 100px;
+    flex-basis: 90px;
 }
