@@ -24,9 +24,14 @@
 
 .AffairWrapper {
     display: flex;
-    padding: 10px;
+    justify-content: center;
 }
 
+.AffairItem {
+    flex-basis: 100px;
+    text-align: left;
+    padding-bottom: 15px;
+}
 
 .RemoveButton {
     padding: 2px 10px;
@@ -59,8 +64,3 @@
     opacity: 0.5;
 }
 
-.AffairItem {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100px;
-}
