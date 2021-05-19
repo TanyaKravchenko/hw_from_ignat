@@ -1,8 +1,11 @@
 .AffairsHeader {
     font-size: 30px;
+    font-weight: bolder;
     color: orange;
     text-decoration: underline;
     text-align: center;
+    padding-bottom: 15px;
+    text-shadow: 0 0 10px black;
 }
 
 .AffairsContainer {
@@ -11,30 +14,30 @@
     width: 550px;
     margin-bottom: 25px;
     padding-left: 50px;
-    text-align: center;
-}
-
-.AffairsWrapper {
-    /*display: flex;*/
-    /*margin: auto;*/
 }
 
 .MappedAffairs {
     color: wheat;
     font-size: 18px;
+    text-align: center;
 }
 
 .AffairWrapper {
     display: flex;
-    flex-direction: row;
-    flex-grow: 3;
-    padding: 10px;
+    justify-content: center;
+}
+
+.AffairItem {
+    flex-basis: 100px;
+    text-align: left;
+    padding-bottom: 15px;
 }
 
 .RemoveButton {
     padding: 2px 10px;
-    background-color: wheat;
+    background: linear-gradient(to top left, teal, cadetblue, PaleTurquoise, yellow);
     border-radius: 10px;
+    box-shadow: 0 0 10px darkblue;
 }
 
 .RemoveButton:hover {
@@ -49,9 +52,11 @@
     margin: 10px;
     padding: 10px;
     color: rgb(155, 107, 18);
-    background-color: wheat;
+    font-weight: bolder;
     border-radius: 10px;
     text-align: center;
+    background: linear-gradient(to top left, teal, cadetblue, PaleTurquoise, yellow);
+    box-shadow: 0 0 10px darkblue;
 }
 
 .TaskButton button:hover {
@@ -62,8 +67,14 @@
     opacity: 0.5;
 }
 
-.AffairItem:not(:last-child) {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 90px;
+.High {
+    color: aqua;
+}
+
+.Middle {
+    color: coral;
+}
+
+.Low {
+    color: firebrick;
 }
