@@ -32,8 +32,15 @@
     margin: 10px;
     padding: 10px;
     color: rgb(155, 107, 18);
-    background-color: wheat;
+    font-weight: bolder;
     border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(to top left, teal, cadetblue, PaleTurquoise, yellow);
+    box-shadow: 0 0 10px darkblue;
+}
+
+.nameButton:hover {
+    opacity: 0.5;
 }
 
 .countName {
