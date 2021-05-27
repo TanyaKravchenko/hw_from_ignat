@@ -8,12 +8,11 @@
 
 .superInput {
     border: 3px solid greenyellow;
-
 }
 
 .errorInput {
     border: 3px solid red;
-    background: burlywood;
+    background: lightsteelblue;
 }
 
 .error {

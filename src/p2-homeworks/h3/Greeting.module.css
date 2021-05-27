@@ -43,6 +43,10 @@
     opacity: 0.5;
 }
 
+.nameButton:focus {
+    opacity: 0.5;
+}
+
 .countName {
     margin: 15px;
     font-size: 18px;
