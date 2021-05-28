@@ -1,7 +1,7 @@
 .defaultButton {
     margin: 10px;
     padding: 10px;
-    color: rgb(155, 107, 18);
+    color: mediumslateblue;
     font-weight: bolder;
     border-radius: 10px;
     text-align: center;
@@ -18,5 +18,5 @@
 }
 
 .redButton {
-   color: red;
+   color: firebrick;
 }
