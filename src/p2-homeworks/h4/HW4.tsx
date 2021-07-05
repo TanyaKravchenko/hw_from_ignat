@@ -30,11 +30,13 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
+                    placeholder={'Введи текст'}
                     // spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText
                     className={s.blue} // проверьте, рабоет ли смешивание классов
+                    placeholder={'Проверка смешивания классов'}
                 />
 
                 {/*----------------------------------------------------*/}
@@ -44,13 +46,13 @@ function HW4() {
                 </SuperButton>
 
                 <SuperButton
-                    //red // пропсу с булевым значением не обязательно указывать true
+                    red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
-                <SuperButton>
+                <SuperButton disabled className={s.disabled}>
                     disabled
                 </SuperButton>
 
