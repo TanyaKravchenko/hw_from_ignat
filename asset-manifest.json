@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hw_from_Ignat/static/css/main.f21bf38d.chunk.css",
+    "main.js": "/hw_from_Ignat/static/js/main.7e63c5e4.chunk.js",
+    "main.js.map": "/hw_from_Ignat/static/js/main.7e63c5e4.chunk.js.map",
+    "runtime-main.js": "/hw_from_Ignat/static/js/runtime-main.c3c8f844.js",
+    "runtime-main.js.map": "/hw_from_Ignat/static/js/runtime-main.c3c8f844.js.map",
+    "static/js/2.c94fe165.chunk.js": "/hw_from_Ignat/static/js/2.c94fe165.chunk.js",
+    "static/js/2.c94fe165.chunk.js.map": "/hw_from_Ignat/static/js/2.c94fe165.chunk.js.map",
+    "index.html": "/hw_from_Ignat/index.html",
+    "precache-manifest.e8b274459c000204cd3fa9518def7a97.js": "/hw_from_Ignat/precache-manifest.e8b274459c000204cd3fa9518def7a97.js",
+    "service-worker.js": "/hw_from_Ignat/service-worker.js",
+    "static/css/main.f21bf38d.chunk.css.map": "/hw_from_Ignat/static/css/main.f21bf38d.chunk.css.map",
+    "static/js/2.c94fe165.chunk.js.LICENSE.txt": "/hw_from_Ignat/static/js/2.c94fe165.chunk.js.LICENSE.txt",
+    "static/media/App.module.css": "/hw_from_Ignat/static/media/1533326959_low-poly-background-generator-min.5c355b8b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3c8f844.js",
+    "static/js/2.c94fe165.chunk.js",
+    "static/css/main.f21bf38d.chunk.css",
+    "static/js/main.7e63c5e4.chunk.js"
+  ]
+}
