@@ -30,6 +30,10 @@
     text-decoration: none;
 }
 
+.navLink:hover {
+    opacity: 0.3;
+}
+
 .active {
     color: darkblue;
     font-weight: bolder;
