@@ -1,0 +1,24 @@
+.spanClassName {
+    font-size: 30px;
+    color: skyblue;
+}
+
+.mySpan {
+    position: relative;
+    display: inline-block;
+    height: 52px;
+    padding-top: 10px;
+    width: 430px;
+}
+
+.mySpan:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 70px; top: -20px;
+    z-index: 1;
+    background: paleturquoise;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    border-radius: 7px;
+}
