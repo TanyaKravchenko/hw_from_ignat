@@ -1,0 +1,13 @@
+.preloaderContainer {
+    height: 150px;
+}
+
+.preloaderImg img {
+    border-radius: 50%;
+    width: 125px;
+    height: 110px;
+}
+
+.preloaderButton {
+    margin-top: 15px;
+}
