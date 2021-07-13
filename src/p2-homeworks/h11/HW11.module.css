@@ -1,0 +1,14 @@
+.rangeWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 120px;
+}
+
+.valueWrapper {
+    color: paleturquoise;
+}
+
+.slider body{
+    color: paleturquoise;
+}
