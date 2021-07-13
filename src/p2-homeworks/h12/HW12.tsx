@@ -37,7 +37,6 @@ function HW12() {
             {/*SuperSelect or SuperRadio*/
             }
 
-            <hr/>
         </div>
     );
 }
