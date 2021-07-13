@@ -1,0 +1,14 @@
+.timeContainer {
+    height: 90px;
+    padding-left: 20px;
+}
+
+.timeItem {
+    font-size: 40px;
+    color: lightcoral;
+}
+
+.dateItem {
+    color: indianred;
+    font-size: 20px;
+}
