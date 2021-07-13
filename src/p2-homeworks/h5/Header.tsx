@@ -22,6 +22,7 @@ function Header() {
                     <NavLink to={PATH.HW10} className={s.navLink} activeClassName={s.active}> Homework 10</NavLink>
                     <NavLink to={PATH.HW11} className={s.navLink} activeClassName={s.active}> Homework 11</NavLink>
                     <NavLink to={PATH.HW12} className={s.navLink} activeClassName={s.active}> Homework 12</NavLink>
+                    <NavLink to={PATH.HW13} className={s.navLink} activeClassName={s.active}> Homework 13</NavLink>
                 </div>
             </div>
         </div>

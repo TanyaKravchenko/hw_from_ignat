@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.text {
+    color: paleturquoise;
+}
