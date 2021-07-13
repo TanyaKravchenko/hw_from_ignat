@@ -1,6 +1,7 @@
-import React, {useState} from "react";
-import {homeWorkReducer} from "./bll/homeWorkReducer";
-import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import React, {useState} from 'react';
+import {homeWorkReducer} from './bll/homeWorkReducer';
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
+import s from './HW8.module.css';
 
 export type UserType = {
     _id: number
@@ -9,27 +10,27 @@ export type UserType = {
 }
 
 const initialPeople = [
-    {_id: 0, name: "Кот", age: 3},
-    {_id: 1, name: "Александр", age: 66},
-    {_id: 2, name: "Коля", age: 16},
-    {_id: 3, name: "Виктор", age: 44},
-    {_id: 4, name: "Дмитрий", age: 40},
-    {_id: 5, name: "Ирина", age: 55},
+    {_id: 0, name: 'Кот', age: 3},
+    {_id: 1, name: 'Александр', age: 66},
+    {_id: 2, name: 'Коля', age: 16},
+    {_id: 3, name: 'Виктор', age: 44},
+    {_id: 4, name: 'Дмитрий', age: 40},
+    {_id: 5, name: 'Ирина', age: 55},
 ]
 
 function HW8() {
     const [people, setPeople] = useState(initialPeople);
 
     const finalPeople = people.map(p => (
-        <div key={p._id}>
-            <span>{p.name}</span>
+        <div className={s.peopleItem} key={p._id}>
+            <span className={s.nameItem}>{p.name}: </span>
             <div>{p.age}</div>
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: "sort", payload: "up"}))
-    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: "sort", payload: "down"}))
-    const check_18= () => setPeople(homeWorkReducer(initialPeople, {type: "check", payload: "18"}))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'}))
+    const check_18 = () => setPeople(homeWorkReducer(initialPeople, {type: 'check', payload: 18}))
 
     return (
         <div>
@@ -37,13 +38,16 @@ function HW8() {
             homeworks 8
 
             {/*should work (должно работать)*/}
-
-            {finalPeople}
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div>sort down</div>
-
-            check 18
-
+            <div className={s.mainContainer}>
+                <div className={s.peoplesContainer}>
+                    {finalPeople}
+                </div>
+                <div className={s.buttonContainer}>
+                    <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
+                    <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
+                    <div><SuperButton onClick={check_18}>18 +</SuperButton></div>
+                </div>
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
