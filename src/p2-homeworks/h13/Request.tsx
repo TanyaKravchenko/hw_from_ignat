@@ -29,7 +29,7 @@ export const Request = () => {
             </div>
             <div className={s.text}>{JSON.stringify(information)}</div>
             <div>
-                <SuperButton onClick={setCheckBox}>push</SuperButton>
+                <SuperButton onClick={setCheckBox}>Click me</SuperButton>
             </div>
         </div>
     );

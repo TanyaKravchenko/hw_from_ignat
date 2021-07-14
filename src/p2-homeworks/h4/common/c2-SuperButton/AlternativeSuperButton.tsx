@@ -1,8 +1,11 @@
 import React from "react";
+import {Button} from '@material-ui/core';
 
 function AlternativeSuperButton() {
     return (
-        <button/>
+        <Button variant="contained" color="secondary">
+            Click me
+        </Button>
     );
 }
 
